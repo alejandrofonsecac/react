@@ -3,6 +3,7 @@ import './App.css'
 import HelloWorld from './components/HelloWorld'
 import SayMyName from './components/SaMyName';
 import Person from './components/person';
+import List from './components/List';
 
 function App() {
   /*let name = 'Gustavo'
@@ -35,6 +36,7 @@ function App() {
       nome = 'Alejandro' 
       idade = '19'
       profissao = 'programador'/>
+      <List/>
     </div>
   )
 }
