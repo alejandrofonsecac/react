@@ -5,6 +5,10 @@ import SayMyName from './components/SaMyName';
 import Person from './components/person';
 import List from './components/List';
 
+import Event from './components/Event';
+
+import Form from './components/Form';
+
 function App() {
   /*let name = 'Gustavo'
   let NewName = name.toUpperCase()
@@ -25,7 +29,7 @@ function App() {
     </div>
   );*/
 
-  const nome = 'Maria'
+  /*const nome = 'Maria'
   return (
     <div className='App'>
       <HelloWorld/>
@@ -37,8 +41,20 @@ function App() {
       idade = '19'
       profissao = 'programador'/>
       <List/>
+      <Event/>
     </div>
   )
+}*/
+
+return (
+  <div className='App'>
+    <h1>Testando eventos</h1>
+    <Event numero='1'/>
+    <Event numero='2'/>
+    <Form/>
+  </div>
+)
+
 }
 
 export default App;
