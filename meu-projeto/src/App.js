@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 import logo from './logo.svg';
 import './App.css'
 import HelloWorld from './components/HelloWorld'
@@ -10,14 +12,19 @@ import Condicional from './components/Condicional';
 
 import List from './components/RenderList/List';
 
+import SeuNome from './components/StateLift/SeuNome';
+import Saudacao from './components/StateLift/Saudacao';
+
 function App() {
+
+  const [nome, setNome] = useState('');
     
-    const meusItens = ['React', 'Vue', 'Angular', 'Svelte']
   return (
-    <div className='App'>
-      <h1>Renderização de Listas</h1> 
-      <List itens = {meusItens}/>
-    </div>
+    <>
+      <h1>State Lift</h1>    
+      <SeuNome setNome={setNome}/>
+      <Saudacao nome={nome}/>
+    </>    
   )
 
 }
