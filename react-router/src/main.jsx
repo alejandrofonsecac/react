@@ -7,6 +7,7 @@ import NavBar from './routes/navBar.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './routes/Home.jsx'
 import Carrinho from './routes/Carrinho.jsx'
+import CarrinhoItems from './routes/CarrinhoItems.jsx'
 import ErrorPage from './routes/ErrorPage.jsx'
 
  {/*const router = createBrowserRouter([
@@ -32,6 +33,12 @@ import ErrorPage from './routes/ErrorPage.jsx'
             path: 'carrinho',
             element: <Carrinho/>
           },
+          {/* --- Rotas unicas (Rotas aninhadas) --- */},
+          {
+            path: 'carrinho/:id',
+            element: <CarrinhoItems/>,
+          },
+
           {
             path: '/home',
             element: <Home/>
